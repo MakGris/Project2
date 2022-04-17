@@ -34,8 +34,6 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         let defaults = UserDefaults.standard
         highScore = defaults.object(forKey: "highScore") as? Int ?? 0
         askQuestion(action: nil)
-        print(countries)
-       
     }
     func askQuestion(action: UIAlertAction!) {
         countries.shuffle()
